@@ -22,4 +22,4 @@ else
 	printf("%d is %d is negative \n", n);
 
 return (0);
-}	
+}
