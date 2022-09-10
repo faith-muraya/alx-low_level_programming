@@ -12,14 +12,12 @@ char C = 'A';
 
 while (c <= 'z')
 {
-if (c != 'q' && c != 'e')
 putchar(c);
 c++;
 }
 
 while (C <= 'Z')
 {
-if (C != 'Q' && C != 'E')
 putchar(C);
 C++;
 }
