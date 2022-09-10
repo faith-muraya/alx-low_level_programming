@@ -6,7 +6,7 @@
  *
  * Return: 0
  */
-int main(voi d)
+int main(void)
 {
 
 int n;
