@@ -7,10 +7,14 @@
  */
 int main(void)
 {
-int d = 48
+char c = 'a';
 
-while (d < 58)
-{ 
+while(c <= 'z')
+{
+if(c != 'q' && c != 'e')
+putchar(c);
+c++
+}
 putchar('\n');
 
 return (0);
