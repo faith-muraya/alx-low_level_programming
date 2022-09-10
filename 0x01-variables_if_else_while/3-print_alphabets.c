@@ -23,7 +23,7 @@ if (C != 'Q' && C != 'E')
 putchar(C);
 C++;
 }
-putchar('\n')
+putchar('\n');
 
 return (0);
 }
