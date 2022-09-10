@@ -15,7 +15,7 @@ while (d < 58)
 putchar(d);
 d++;
 }
-while(c <= 'f')
+while (c <= 'f')
 {
 putchar(c);
 c++;
