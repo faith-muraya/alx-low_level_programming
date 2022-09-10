@@ -3,32 +3,34 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - print if te number is positize, zero or negative
  *
- * Return: Always 0 (Success)
+ *Describe:using the main function
+ *this program prints "Programming is positive, zero, or negative
+ * Return: 0
  */
-int main(void)
-
+int main(voi d)
 {
 int n;
+int l;
 
 srand(time(0));
-n = rand() - RAND_MAX /2;
+rand() - RAND_MAX / 2;
+n %10;
 
-if (n % 10 > 5)
+if (l > 5)
 {
-printf("Last digit of %i is %i and is greater than 5\n", n, n % 10);
+	printf("Last digit of %d is %d and is greater than 5\n", n, l);
 }
 
-else
+else if (l == 0)
 {
-printf("Last digit of %i is %i and is 0\n", n, n % 10);
+	printf("Last digit of %d is %d and is 0\n", n, l);
 }
 
 else
 { 
-printf("Last digit of %i is %i and is less than 6 and not 0\n", n, n % 10);	
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);	
 }
-
 return (0);
 }	
