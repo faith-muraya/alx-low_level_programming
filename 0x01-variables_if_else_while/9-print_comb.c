@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-int = 48;
+int( = 48;
 
-while(d < 58>)
+while (d < 58)
 {
 putchar(d);
-if(d ! = 57)
+if (d) ! = 57)
 {
 putchar(',');
 putchar(' ');
