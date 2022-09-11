@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-int(d) = 48;
+int( = 48;
 
 while (d < 58)
 {
