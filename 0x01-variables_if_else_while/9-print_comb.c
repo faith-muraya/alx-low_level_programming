@@ -7,19 +7,21 @@
  */
 int main(void)
 {
-d = 48;
+int c;
 
-while (d < 58)
-{
-putchar(d);
-if (d) ! = 57)
-{
-putchar(',');
-putchar(' ');
-}
-d++;
-}
-putchar('\n');
+	for (c = '0';c <= '9';c++)
+	{
+		putchar(c);
 
-return (0);
+		if (c != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+
+	putchar('n');
+
+	return (0)
 }
+
