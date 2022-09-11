@@ -7,28 +7,27 @@
  */
 int main(void)
 {
-int d = 48, a = 48;
+	int i, j;
 
-while(d < 58)
-{
-a = (48);
-while (a < 58)
-{
-if (d ! =a && d < a)
-{
-putchar(d);
-putchar(a);
+	for (j =1; j <= 9; j++)
+	
+	{
+		if (j >i)
+	
+		{
+			putchar(i+'0');
+			putchar(j +'0';
 
-if (! d == 56 && a == 57)
-{
-putchar(',');
-putchar(' ');
-}
-a++;
-}
-d++;
-}
-putchar('\n');
+			if (i ! = 8)
 
-return (0);
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+
+	putchar('\n');
+
+	return(0);
 }
