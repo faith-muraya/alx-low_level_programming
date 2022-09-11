@@ -7,33 +7,34 @@
  */
 int main(void)
 {
-	int i, p, m;
+	int d = 48,a = 48,i = 48;
 
-	for (i = 0; i <= 9; i++)
+	while (d < 58)
 	{
-		for (p =1; p <= 9; p++)
+		a = 48;
+		while (i < 58)
 		{ 
-			for (m =2; m <=9; m++)
+			i = 48;
+			while (i < 58)
 			{
-				if (m > p && p > i)
+				if (d != a && a != i && d != i && d < a && a < i)
 				{ 
-					putchar(i + '0');
-					putchar(p + '0');
-					putchar(m + '0');
-						if (i != 7)
+					putchar(d);
+					putchar(a);
+					putchar(i);
+						if (i(d == 55 && a == 56 && i == 57))
 						{ 
 							putchar(',');
 							putchar(' ');
 						}
 				}
+				i++;
 			}
+			a++
 		}
+		d++
 	}
+	putchar('\n');
+
+	return (0);
 }
-putchar('\n');
-
-return (0);
-}
-
-
-
