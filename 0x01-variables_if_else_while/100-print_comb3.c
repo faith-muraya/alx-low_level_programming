@@ -7,19 +7,19 @@
  */
 int main(void)
 {
-	int c, i;
+	int i, j;
 
-	for (c = '0'; c <= '9'; c++)
+	for (c = '0'; c <= '9'; i++)
 	{
-		for (i = '0' ; c <= '9'; i++)
+		for (i = '0' ; c <= '9'; j++)
 		{				
 	
-			if (c < i)
+			if (j < i)
 			{
-				putchar(c);
-				putchar(i);
+				putchar(i + '0');
+				putchar(j + '0');
 
-				if (c!= '8' || (c == '8' && i))! = '9';
+				if (i!=8)
 				{
 					putchar(',');
 					putchar(' ');
@@ -30,6 +30,5 @@ int main(void)
 	}
 
 putchar('\n');
-
 return (0);
 }
