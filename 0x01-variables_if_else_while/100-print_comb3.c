@@ -3,15 +3,15 @@
 /**
  * main - Entry point
  *
- * Return:Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int i, j;
 
-	for (c = '0'; c <= '9'; i++)
+	for (i = 0; i <= '9'; i++)
 	{
-		for (i = '0' ; c <= '9'; j++)
+		for (j = 1 ; j <= '9'; j++)
 		{				
 	
 			if (j < i)
