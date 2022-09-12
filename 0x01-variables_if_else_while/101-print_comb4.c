@@ -8,38 +8,35 @@
  
  int main(void)
  {
-	int i, p, m;
+	 int d = 48, a = 48, i = 48;
 
+	 while (d < 58)
+	 
+	 {
+		 a = 48;
+		 while (a < 58)
+		 {
+			 if(d!=a && a!=i && d < a && a < i)
+			 {
+				 putchar(d);
+				 putchar(a);
+				 putchar(i);
+				 if(!(d == 55 && a == 56 && i == 57))
+				 {
+					 putchar(',');
+					 putchar(' ');
 
-	for (i = 0; i <= 9; i++)
-	{
-		for (p = 1; p <= 9; p++)
-		{
-			for (m = 2; m <= 9; m++)
-			{
-			if (m > p && p > i)
-			{
-				putchar(i + '0');
-				putchar(p + '0');
-				putchar(m + '0');
-					if (i != 7)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+				 }
+			 }
+			 i++
+		 }
+		 a++
+	 }
+	 d++
+putchar('\n);
+
+return(0);
 }
 
-
-
-
-
-
-
-
-
-
+	
+	
