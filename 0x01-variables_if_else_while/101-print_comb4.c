@@ -8,33 +8,41 @@
  *
  *     * Return: Always 0.
  *
- *      */
+ 
+ int main(void)
+ {
+	int i, p, m;
 
-int main(void)
-{
-	int digit1, digit2, digit3;
 
-	for (digit1 = 0; digit1 < 8; digit1++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		for (p = 1; p <= 9; p++)
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			for (m = 2; m <= 9; m++)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
-
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-					continue;
-
-				putchar(',');
-				putchar(' ');
+			if (m > p && p > i)
+			{
+				putchar(i + '0');
+				putchar(p + '0');
+				putchar(m + '0');
+					if (i != 7)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
-
-
-putchar('\n');
-
-return (0);
+	putchar('\n');
+	return (0);
 }
+
+
+
+
+
+
+
+
+
+
