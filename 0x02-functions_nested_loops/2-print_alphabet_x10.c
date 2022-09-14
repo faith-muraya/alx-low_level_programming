@@ -1,29 +1,19 @@
 #include "main.h"
-
 /**
- * main - Entry point
+ * print_alphabet_x10 - function to print abc 10 times
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 void print_alphabet_x10(void)
 {
+char c, i;
 
-int n, co;
-co = 0;
-
-while (co < 10)
+for (i = 0; i <= 9; i++)
 {
-
-for (n = 'a'; n <= 'z'; n++)
+for (c = 'a'; c <= 'z'; c++)
 {
-
-_putchar(n);
+_putchar(c);
 }
-
-co++;
-
 _putchar('\n');
-
 }
-
 }
