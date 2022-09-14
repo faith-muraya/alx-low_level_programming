@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
+#include "main.h"
 /**
  * print-alphabet - prints the alphabets
  *
@@ -9,7 +6,7 @@
  */
 void print_alphabet(void)
 {
-int n;
+char n;
 
 for (n = 'a'; n <= 'z'; n++)
 {
