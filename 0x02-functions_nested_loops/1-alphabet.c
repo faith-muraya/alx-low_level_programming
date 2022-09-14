@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
- * Description: function to print abc
+ * print_alphabet -  function to print abc
  *
  * Return: 0
  */
