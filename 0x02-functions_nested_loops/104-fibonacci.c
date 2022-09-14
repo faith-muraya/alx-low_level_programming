@@ -9,13 +9,13 @@ unsigned long count, i, j, k;
 
 i = 0;
 j = 1;
-for (count = 0; count < 100; count++)
+for (count = 0; count < 98; count++)
 {
 k = i + j;
 i = j;
 j = k;
 printf("%lu", k);
-if (count == 49)
+if (count == 99)
 {
 putchar('\n');
 }
