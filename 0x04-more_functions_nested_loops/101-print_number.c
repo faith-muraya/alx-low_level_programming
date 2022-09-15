@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include "main."
+#include "main.h"
 
 /**
  * print_number - Prints a number
  * @n: The number to print
- *
- * Return: returns 0
  */
 
 void print_number(int n)
