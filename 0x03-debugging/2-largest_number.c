@@ -17,7 +17,7 @@ largest = a;
 }
 else if (b >= a && b >= c)
 {
-larget = b;
+largest = b;
 }
 else
 {
