@@ -19,6 +19,6 @@ int main(void)
 			break;
 		}
 	}
-ii
+
 	return (0);
 }
