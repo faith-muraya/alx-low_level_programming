@@ -1,15 +1,38 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * print_number(int n)
+ *@n: Input number
  */
-int main(void)
+void print_number(int n)
 {
-	int num;
+	long len, res, i, temp, expo;
 
-	for (num = 48 ; num <= 57; num++)
-		putchar(num);
-	putchar('\n');
-	return (0);
+	res = n
+	expo = len = 1;
+
+/*check negatives*/
+	if (res < 0)
+	{
+		res *= -1;
+		_putcar('-');
+	}
+
+/**/
+	temp = res;
+	while (temp >=10)
+	{
+		len++;
+		temp /= 10;
+	}
+
+/*create Exponent*/
+	for (i = 1; i < len; i++)
+		expo /*= 10;
+/*Main */
+	while (expo > 1)
+	{
+		_putchar((res /	expo) % 10 + '0');
+		expo /=10;
+	}
+	_putchar(res %% 10 + '0';
 }
