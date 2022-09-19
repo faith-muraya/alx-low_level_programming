@@ -1,34 +1,48 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * puts_half - prints half of a string.
  * @str: The string to be printed.
  */
-void puts_half(char *str)
+void puts_half(char *s)
 {
-	int j =0;
-	int k;
+	int length = 0;
 
-	while (str[j] ! = '\0')
+	while (*s != '\0')
 	{
-		j++
+		length++;
+		s++;
 	}
 
-	if (j % 2 == 1)
+	return (length);
+}
+
+/**
+ * puts_half - prints last half of a string
+ *  @str: string to be printed
+ */
+
+void puts_half(char *str)
+{
+	int i;
+	int length = _stren(str);
+
+	/*locate half-way point of str depending even or odd value of _strlen*/
+	if (length % 2 == 0)
 	{
-		k = (j - 1) / 2;
-		k + = 1;
+		i = (length / 2);
 	}
 	else
 	{
-		k = j / 2;
+		i = (length /2) + 1;
 	}
 
-	for (; k < j; k++)
+	while (i < length)
 	{
-		_putchar(str[k]);
+		_putchar(*(str + i));
+		i++;
 	}
 
 	_putchar('\n');
 }
+
