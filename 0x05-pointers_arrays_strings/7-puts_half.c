@@ -1,23 +1,6 @@
 #include "main.h"
 
 /**
- * puts_half - prints half of a string.
- * @str: The string to be printed.
- */
-void puts_half(char *s)
-{
-	int length = 0;
-
-	while (*s != '\0')
-	{
-		length++;
-		s++;
-	}
-
-	return (length);
-}
-
-/**
  * puts_half - prints last half of a string
  *  @str: string to be printed
  */
