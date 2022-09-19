@@ -6,25 +6,18 @@
  */
 void puts_half(char *str)
 {
-	int i;
-	int length = _strlen(str);
+	int i, j;
 
-	/*locate half-way point of str depending even or odd value of _strlen*/
-	if (length % 2 == 0)
-	{
-		i = (length / 2);
-	}
-	else
-	{
-		i = (length /2) + 1;
-	}
-
-	while (i < length)
-	{
-		_putchar(*(str + i));
+	while (str[i] != '\0')
 		i++;
+	if (i % 2 == 0)
+		j = (i+1) /2;
+	else
+		j = (i + 1) /2;
+	while (j < i)
+	{
+		_putchar(str[j]);
+		j++;
 	}
-
 	_putchar('\n');
 }
-
