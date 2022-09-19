@@ -8,7 +8,7 @@
 void puts_half(char *str)
 {
 	int i;
-	int length = _stren(str);
+	int length = _strlen(str);
 
 	/*locate half-way point of str depending even or odd value of _strlen*/
 	if (length % 2 == 0)
