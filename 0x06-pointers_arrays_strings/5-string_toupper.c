@@ -11,15 +11,11 @@ char *string_toupper(char *)
 {
 	int i = 0;
 
-	while (p[a])
+	while (str[i] != '\0')
 	{
-		if (p[a] >= 97 && p[a] <= 122)
-		{
-			p[a] -=32;
-		}
-
-
-		a++;
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= 32;
+		i++;
 	}
-	return (p);
+	return (str);
 }
