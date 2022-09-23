@@ -8,17 +8,16 @@
  */
 void print_number(int n);
 {
-	unsigned int x;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n *= -1;
+		n = -num;
 	}
 
-	x = n;
+	if ((num / 10) > 0)
+		printf_number(num / 10);
 
-	if (x / 10)
-		printf_number(x / 10);
-	_putchar(x % 10 + '0');
+	_putchar(num % 10 + '0');
 }
