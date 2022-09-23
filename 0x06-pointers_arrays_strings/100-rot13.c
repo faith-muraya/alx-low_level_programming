@@ -2,33 +2,27 @@
 
 /**
  * rot13 - encodes a string using rot13.
- * @str: The string to be encoded.
+ * @s: The string to be encoded.
  *
  * Return: A pointer to the encoded string.
  */
-char *rot13(char *str)
+char *rot13(char *s)
 {
 	int i, j;
-	char *lookup;
+	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	lookup = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	while (str[i] != '\0')
+	for (i = 0; *(s + i); i++)
 	{
-		j = 0;
-		while (lookup[j] != '\0')
+		for (j = 0; j < 52; j++)
 		{
-			if (str[i] == lookup[j])
-			{
-				int inex;
-
-				index = ((j + 13) % 26) + ((j / 26) * 26);
-				str[i] = lookup[index];
+			if (a[j] == *(s + i))
+			{	
+				*(s + i) = b[j];
 				break;
 			}
-			j++;
 		}
-		i++;
 	}
 
-	return (str);
+	return (s);
 }
