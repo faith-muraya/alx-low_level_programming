@@ -8,22 +8,26 @@
  */
 char *rot13(char *str)
 {
-	int indx1 = 0, indx2;
-	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F','G', 'H', 'I', 'J', 'K', 'L','M', 'N', 'O', 'P', 'Q', 'R','S', 'T', 'U', 'V', 'W', 'X','Y', 'Z', 'a', 'b', 'c', 'd','e', 'f', 'g', 'h', 'i', 'j','k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v','w', 'x', 'y', 'z'};
-	char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S','T', 'U', 'V', 'W', 'X', 'Y','Z', 'A', 'B', 'C', 'D', 'E','F', 'G', 'H', 'I', 'J', 'K','L', 'M', 'n', 'o', 'p', 'q','r', 's', 't', 'u', 'v', 'w','x', 'y', 'z', 'a', 'b', 'c','d', 'e', 'f', 'g', 'h', 'i','j', 'k', 'l', 'm'};
+	int i, j;
+	char *lookup;
 
-	while (str[indx1])
+	lookup = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	while (str[i] != '\0')
 	{
-		for (indx2 = 0; indx2 < 52; indx2++)
+		j = 0;
+		while (lookup[j] != '\0')
 		{
-			if (str[indx1] == alphabet[indx2])
+			if (str[i] == lookup[j])
 			{
-				str[indx1] = rot13key[indx2];
+				int inex;
+
+				index = ((j + 13) % 26) + ((j / 26) * 26);
+				str[i] = lookup[index];
 				break;
 			}
+			j++;
 		}
-
-		indx1++;
+		i++;
 	}
 
 	return (str);
