@@ -18,7 +18,7 @@ int root_square(int num, int n)
 	}
 	else if (num * num > n)
 	{
-		return (-1)
+		return (-1);
 	}
 	else
 	{
