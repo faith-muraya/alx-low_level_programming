@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - Program give the amount of cents
- * @argc: Number of command lines arguments
- * @argv: Character of arrays
+ * main - Program give the amount of cents.
+ * @argc: Number of command lines arguments.
+ * @argv: Character of arrays.
  *
- * Return: 0 for success or 1 for error
+ * Return: 0 for success or 1 for error.
  */
 int main(int argc, char *argv[])
 {
