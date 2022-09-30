@@ -21,6 +21,11 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
+	if (argv[1][0] == '-')
+	{
+		printf("0\n");
+		return (0);
+	}
 	if (argc > 2)
 	{
 		printf("Error\n");
