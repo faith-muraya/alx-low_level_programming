@@ -10,23 +10,19 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int result = 1;
+	int num1, num2, prod;
 
-	if (argc < 3 || argc >= 4)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
-	{
-		for (i = 1; i < argc; i++)
-		{
 
-			result *= atoi(argv[i]);
-		}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	prod = num1 * num2;
 
-		printf("%d\n", result);
-	}
-	result (0);
+	printf("%d\n", prod);
+
+	return (0);
 }
