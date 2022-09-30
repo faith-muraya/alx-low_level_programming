@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - Program that multiplies two numbers
- * @argc: Number of command lines arguments
- * @argv: Character of arrays
+ * main - Program that multiplies two numbers.
+ * @argc: Number of command lines arguments.
+ * @argv: Character of arrays.
  *
  * Return: Result of multiplication or 1 when does not receive two arguments
  */
@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
+
 			result *= atoi(argv[i]);
 		}
 
