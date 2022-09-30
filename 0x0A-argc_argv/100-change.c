@@ -10,34 +10,43 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	unsigned int cents[5] = {25, 10, 5, 2, 1};
-	unsigned long int num = 0;
-	unsigned long int n_cents[5] = {0};
-	unsigned long int result = 0;
+	int cents, coins = 0;
 
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (0);
-	}
-	if (argv[1][0] == '-')
-	{
-		printf("0\n");
-		return (0);
-	}
-	if (argc > 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	num = atoi(argv[1]);
-	for (i = 0; i <= 4; i++)
+
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
 	{
-		n_cents[i] = num / cents[i];
-		num = num % cents[i];
+		coins++;
+		if ((cents - 25) >= 0)
+		{
+			cents -= 25;
+			continue;
+		}
+		if ((cents - 10) >= 0)
+		{
+			cents -= 10;
+			continue;
+		}
+		if ((cents - 5) >= 0)
+		{
+			cents -= 5;
+			continue;
+		}
+		if ((cents - 2) >= 0)
+		{
+			cents -= 2;
+			continue;
+		}
+		cents--;
 	}
-	result = n_cents[0] + n_cents[1] + n_cents[2] + n_cents[3] + n_cents[4];
-	printf("%lu\n", result);
+
+	printf("%d\n", coins);
+
 	return (0);
 }
