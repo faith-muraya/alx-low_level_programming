@@ -6,7 +6,7 @@
  * @argc: Number of command lines arguments.
  * @argv: Character of arrays.
  *
- * Return: Result of multiplication or 1 when does not receive two arguments
+ * Return: Result of multiplication.
  */
 int main(int argc, char *argv[])
 {
