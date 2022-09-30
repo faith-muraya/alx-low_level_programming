@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Program that prints its name, followed by a new line
- * @argc: Number of command lines arguments
- *@argv: Character of arrays
+ * main - Program that prints its name, followed by a new line.
+ * @argc: Number of command lines arguments.
+ * @argv: Character of arrays.
  *
- * Return: 0
+ * Return: 0.
  */
 int main(int argc, char *argv[])
 {
