@@ -3,8 +3,8 @@
 
 /**
  * _calloc - Allocates memory for an array of a certain number
- * @nmemb: The number of elements
- * @size: The byte size of each array element
+ * @nmemb: The number of members
+ * @size: Size
  *
  * Return: If nmemb = 0, size = 0, or the function fails - NULL
  */
