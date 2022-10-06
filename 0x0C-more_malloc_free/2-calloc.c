@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * _calloc - Allocates memory for an array of a certain number
- * @nmemb: The number of members
- * @size: Size
+ * _calloc - ...
+ * @nmemb: number of members
+ * @size: size
  *
- * Return: If nmemb = 0, size = 0, or the function fails - NULL
+ * Return: ...
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
