@@ -19,9 +19,7 @@ void print_opcodes(char *a, int n)
 			printf(" ");
 	}
 	printf("\n");
-
 }
-
 /**
  * main - prints the opcodes of its own main function
  * @argc: number of arguments passed to the function
