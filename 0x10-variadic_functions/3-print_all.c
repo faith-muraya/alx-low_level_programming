@@ -51,7 +51,7 @@ void chk_string(va_list list)
 void print_all(const char * const format, ...)
 {
 	check_t types[] = {
-		{"c", chk_char}
+		{"c", chk_char},
 		{"i", chk_int},
 		{"f", chk_float},
 		{"s", chk_string},
