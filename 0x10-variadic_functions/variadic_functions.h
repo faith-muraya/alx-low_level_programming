@@ -4,7 +4,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * struct check - paramenters to check against
+ * struct print - print type with corresponding print function
  * @t: print type
  * @f: print function
  */
