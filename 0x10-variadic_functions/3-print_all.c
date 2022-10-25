@@ -24,6 +24,15 @@ void chk_int(va_list list)
  * @list: the type
  * Return: nothing
  */
+void chk_float(va_list list)
+{
+	printf("%f", va_arg(list, double));
+}
+/**
+ * chk_string - prints the string
+ * @list: the type
+ * Return: nothing
+ */
 void chk_string(va_list list)
 {
 	char *str;
