@@ -7,29 +7,14 @@
  /
 void print_binary(unsigned long int n)
 {
-	unsigned long int copy, i, k;
-
-	copy = n;
-	i = 0;
-	if (n == 0)
+	if (n >> 0)
+	{
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
+	}
+	else
 	{
 		_putchar('0');
-		return;
 	}
-	while (copy != 0)
-	{
-		i++;
-		copy = copy >> 1;
-	}
-	while (i)
-	{
-	copy = n;
-	for (k = 1; k < i; k++)
-	copy = copy >> 1;
-		if (copy == (copy | 1))
-		_putchar('1');
-		else
-	_putchar ('0');
-		i--;
-	}
-}
+}	
